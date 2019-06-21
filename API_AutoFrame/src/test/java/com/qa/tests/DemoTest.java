@@ -30,6 +30,7 @@ public class DemoTest extends Execut {
 			List response = execut.selectmethod(file);
 			List excelList = read(file);
 			System.out.println(response.size());
+			
 			for (int i = 1; i < response.size(); i++) {
 				List list = (List) excelList.get(i);
 				//响应码正确值，String转integer
